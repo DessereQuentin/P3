@@ -1,0 +1,277 @@
+
+@font-face {
+
+   font-family: 'Roboto';
+   src: url('Roboto/Roboto-BlackItalic.ttf') format('truetype');
+
+   font-family: 'Shrikhand';
+   src: url('Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+
+
+}
+
+/* box-sizing est appliqué à tous les éléments */
+* {
+   box-sizing: border-box;
+   /* On définit la largeur de la page*/
+
+}
+
+body {
+   font-family: 'Roboto-BlackItalic',sans-serif;
+   --primary-color: #9356DC;
+   --secondary-color: #FF79DA;
+   --tertiary-color:#99E2D0;
+   min-width:280px;
+max-width:500px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+}
+
+h1 {
+   font-size: 1.2em;
+}
+h2,h3{
+   font-size:0.9em;
+   padding:3px;
+}
+
+p{
+   font-size:0.7em;
+   padding:3px;
+}
+
+a{color:black;}
+
+/*header*/
+
+header{
+   display : flex;
+   flex-direction:column;
+
+  }
+
+  header img{
+    
+  max-height:250px;
+  }
+
+#logo{
+display:flex;
+position:relative;
+   margin :auto;
+   padding-top:10px;
+    padding-bottom:10px;
+}
+
+#logo> img{
+  
+ width:50%;
+ margin:auto;
+}
+
+h1,h2{
+ margin-left:20px;
+}
+
+.fa-arrow-left{
+position:absolute;
+top:35%;
+left:20px;
+
+}
+
+
+/*Section*/
+
+
+
+section{
+   border-radius: 30px 30px 0px 0px;
+   background-color:rgb(240, 240, 240);
+   margin-top:-40px;
+   
+}
+
+.fa-stack{
+   float:right;
+   top:20px;
+   right:20px;
+   font-size:0.7em;
+ }
+
+ .fa-stack-1x{
+    height:0%;
+    opacity:0;
+    background: -webkit-linear-gradient(hsl(317, 100%, 81%), hsl(267, 66%, 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+   }
+
+.fa-stack:hover .fa-stack-1x{
+   opacity:1;
+font-size:2em;
+height:100%;
+transition-duration:0.5s;
+
+
+}
+
+.fa-stack:hover .fa-stack-2x{
+   opacity:0;
+}
+
+
+
+h2{
+   font-weight:lighter;
+text-decoration:underline;
+ }
+
+
+.card {
+  display: flex;
+  flex-direction: row;
+justify-content:space-between;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  padding-left: 10px;
+  margin: 20px;
+  animation: menuslide 1s ease-in-out forwards;
+}
+
+@keyframes menuslide {
+  0% {
+   
+    margin-top: 40px;
+     opacity: 0;
+  }
+
+  100% {
+    
+     margin-top: 0px;
+     opacity: 1;
+  }
+}
+
+.delay1{ animation-delay: 0.1s; }
+.delay2{ animation-delay: 0.15s; }
+.delay3{ animation-delay: 0.20s; }
+.delay4{ animation-delay: 0.25s; }
+.delay5{ animation-delay: 0.30s; }
+.delay6{ animation-delay: 0.35s; }
+.delay7{ animation-delay: 0.40s; }
+.delay8{ animation-delay: 0.45s; }
+.delay9{ animation-delay: 0.5s; }
+
+.valide {
+  display: flex;
+  flex-direction: row;
+justify-content:space-between;
+}
+
+.check {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  background-color: var(--tertiary-color);
+  transition: 0.3s;
+  border-radius:0px 15px 15px 0px;
+    width: 0px;
+ 
+}
+
+.fa-circle-check{
+color:rgb(240, 240, 240);
+margin-top:14px;
+font-size:1.1em;
+}
+
+
+.card:hover .check {
+  transition: 0.8s;
+    width: 61px;
+}
+
+.card:hover .check .fa-circle-check {
+  display: inline-block;
+  transform: rotate(360deg);
+  transition: 0.6s;
+     
+}
+
+.prix{
+  
+padding-top:40px;
+ padding-right:20px;
+   font-weight:bold;
+   font-size:0.8em;
+}
+
+
+
+.nom {   
+  
+   overflow:hidden;
+   white-space: nowrap;
+   margin:0px;
+  }
+.nom h3,.nom p{
+  text-overflow: ellipsis;
+  overflow:hidden;
+  margin:7px;
+ }
+
+.boutton_commande{
+   
+  width:150px;
+   margin:auto;
+   color:white;
+   background-image:linear-gradient(#FF79DA,#9356DC);
+   border-radius:30px 30px 30px 30px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.boutton_commande p{
+  text-align:center;
+padding:15px;
+}
+
+.boutton_commande:hover{
+   cursor:pointer;
+   background-image:linear-gradient(hsl(317, 100%, 81%),hsl(267, 66%, 65%));
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 10px;
+}
+
+
+
+
+  
+
+/*Footer*/
+
+footer {
+   background-color: hsl(0, 0%, 30%);
+   padding-left: 20px;
+}
+
+footer h3 {
+   font-family: 'Shrikhand', sans-serif;
+
+}
+
+footer h3,
+footer i,
+footer p {
+   color: white;
+}
+
+.propos_partner {
+
+   display: flex;
+   align-items: baseline;
+
+}
