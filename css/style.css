@@ -3,11 +3,11 @@
 
 
    font-family: 'Roboto';
-   src: url('Roboto/Roboto-BlackItalic.ttf') format('truetype');
+   src: url('../Roboto/Roboto-BlackItalic.ttf') format('truetype');
 
 
    font-family: 'Shrikhand';
-   src: url('Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+   src: url('../Shrikhand/Shrikhand-Regular.ttf') format('truetype');
 
 
 }
