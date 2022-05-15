@@ -22,13 +22,14 @@ body {
    --primary-color: #9356DC;
    --secondary-color: #FF79DA;
    --tertiary-color:#99E2D0;
-
+   max-width: 900px;
    margin: auto;
    display: flex;
    flex-direction: column;
 }
 
 h1 {
+   font-family: 'Shrikhand', sans-serif;
    font-size: 1.2em;
 }
 h2,h3{
@@ -107,8 +108,8 @@ section{
 
 .fa-stack{
    float:right;
-   top:20px;
-   right:20px;
+bottom:35px;
+right:20px;
    font-size:0.7em;
  }
 
@@ -175,6 +176,7 @@ justify-content:space-between;
 .delay7{ animation-delay: 0.40s; }
 .delay8{ animation-delay: 0.45s; }
 .delay9{ animation-delay: 0.5s; }
+.delay10{ animation-delay: 0.55s; }
 
 .valide {
   display: flex;
@@ -199,8 +201,12 @@ margin-top:14px;
 font-size:1.1em;
 }
 
+.card:hover{
+   cursor:pointer;
+}
 
 .card:hover .check {
+
   transition: 0.8s;
     width: 61px;
 }
@@ -248,6 +254,8 @@ padding-top:40px;
 .boutton_commande p{
   text-align:center;
 padding:15px;
+margin-bottom:40px;
+margin-top:40px;
 }
 
 .boutton_commande:hover{
@@ -311,12 +319,28 @@ footer {
 
 @media screen and (min-width: 769px) {
 
+   section {
+      border-radius: 20px 20px 20px 20px;
+      margin-bottom: 20px;
+   }
  
  article{display:flex;
    flex-direction:row;
+   flex-wrap:wrap;
+   justify-content:center;
 }
-  .entrpladess{display:flex;
-   flex:0.1;
-flex-wrap:wrap;
-flex-direction:column;}
+
+.card{
+   max-width:250px;
+}
+  .entrpladess{
+     display:flex;
+  flex-direction:column;
+}
+
+footer {
+   border-radius: 20px 20px 0px 0px;
+}
+
+
 }
