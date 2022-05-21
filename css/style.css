@@ -110,49 +110,6 @@ body {
 
 /* Spinner*/
 
-.spinner {
-
-   width: 50px;
-   height: 50px;
-   border: 10px dashed green;
-   border-left-color: purple;
-   border-bottom-color: transparent;
-   border-right-color: pink;
-   border-radius: 100%;
-   animation: spin infinite 3000ms ease-in-out;
-}
-
-.space_spinner {
-   z-index: 1;
-   width: 100%;
-   height: 2000px;
-   background-color: rgba(255, 255, 255, 0.9);
-   position: absolute;
-   display: grid;
-   place-items: center;
-   animation: space_spin 3000ms ease-in-out;
-}
-
-@keyframes spin {
-   0% {
-      transform: rotate(0deg);
-   }
-
-   100% {
-      transform: rotate(360deg);
-   }
-}
-
-@keyframes space_spin {
-   0% {
-      scale: 1;
-   }
-
-   100% {
-      scale: 0;
-      display: none;
-   }
-}
 
 /*format textes*/
 
@@ -320,7 +277,7 @@ section h2 {
 }
 
 .restau img {
-   object-fit: fill;
+   object-fit: cover;
    width: 100%;
    height: 120px;
    border-radius: 15px 15px 0 0;
